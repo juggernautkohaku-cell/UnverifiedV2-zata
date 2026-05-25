@@ -1527,9 +1527,9 @@ document.addEventListener("mouseup", () => {
     }
 
     document.addEventListener("keydown", (event) => {
-        if (event.key === "Shift" && event.location === 2) {
-            toggleUI();
-        }
+    if (event.code === "Digit0") {
+        toggleUI();
+    }
 
         for (let moduleName in moduleBindings) {
             if (moduleBindings[moduleName] === event.key) {
